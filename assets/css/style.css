@@ -1,6 +1,12 @@
 :root {
   --primary-color: #0075FF;
 }
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  color: #ffffff;
+}
 .wrapper {
   position: relative;
   top: 0;
@@ -14,4 +20,30 @@
   width: 286px;
   background: var(--primary-color);
   height: 100%;
+  color: #ffffff;
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.logo {
+  padding: 2rem 0;
+}
+.nav-item {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1.4rem 0;
+  line-height: 2rem;
+}
+.active {
+  background: #ffffff;
+}
+.active a {
+  color: #000000;
+}
+.sign-out {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
 }
