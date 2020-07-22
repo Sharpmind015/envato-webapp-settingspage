@@ -69,10 +69,13 @@ a:hover {
   border-radius: 100px;
   padding-left: 1rem;
 }
-.notification {
+.notification, .password {
   background: #ffffff;
   box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
+.notification h5, .password h5 {
+  font-weight: 600;
 }
 .btn-notification {
   background: rgba(0, 117, 255, 0.7);
