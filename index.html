@@ -31,15 +31,62 @@
         <li class="nav-item">
           <a href="#" class="nav-link">Messages</a>
         </li>
-        <li class="nav-item active">
-          <a href="#" class="nav-link">Settings</a>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Settings</a>
         </li>
         <li class="nav-item sign-out">
           <a href="#" class="nav-link">Sign out</a>
         </li>
       </ul>
     </aside>
-    <main class="main--panel"></main>
+    <main class="main-panel">
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-dark pt-4 px-5">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="burger-menu">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+            </div>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <form action="" class="w-50">
+            <div class="form-group">
+              <input type="search" class="form-control" placeholder="Search">
+            </div>
+          </form>
+          <div class="profile ml-auto">
+            <img src="assets/img/Ellipse 7.png" alt="">
+            <div class="dropdown d-inline-block">
+              <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Amelia cooper</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Envato</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-content pl-3">
+        <section class="notification">
+          <div class="container-fluid">
+            <h4>Notifications</h4>
+            <div class="notification-option">
+              <div class="row">
+                <div class="col-8">
+                  <p>Include me in public search</p>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-info">Yes</button>
+                  <button class="btn btn-info">Yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
 
   <!-- JS, Popper.js, and jQuery -->

@@ -7,10 +7,14 @@ body {
 a {
   color: #ffffff;
 }
+a:hover {
+  color: #ffffff;
+}
 .wrapper {
   position: relative;
   top: 0;
   height: 100vh;
+  display: flex;
 }
 .sidebar {
   position: fixed;
@@ -21,24 +25,31 @@ a {
   background: var(--primary-color);
   height: 100%;
   color: #ffffff;
+  overflow: auto;
 }
 .navbar-brand {
   font-size: 2rem;
   font-weight: 600;
 }
 .logo {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
-.nav-item {
-  font-size: 1.3rem;
+.nav-link {
+  font-size: 1.1rem;
   font-weight: 600;
-  padding: 1.4rem 0;
+  padding: 1rem 0;
   line-height: 2rem;
+  margin-bottom: 0.7rem;
+}
+.nav-link:hover {
+  color: #000000;
+  background: #ffffff;
 }
 .active {
   background: #ffffff;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
 }
-.active a {
+.active {
   color: #000000;
 }
 .sign-out {
@@ -46,4 +57,32 @@ a {
   bottom: 13px;
   left: 50%;
   transform: translateX(-50%);
+}
+.main-panel {
+  position: absolute;
+  left: 286px;
+  width: calc(100% - 286px);
+  height: 100%; 
+  top: 0;
+}
+.navbar .form-control {
+  border-radius: 100px;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 286px;
+    z-index: 1000;
+    overflow-y: visible;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 }
