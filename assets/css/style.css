@@ -27,6 +27,12 @@ a:hover {
   color: #ffffff;
   overflow: auto;
 }
+.close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+}
 .navbar-brand {
   font-size: 2rem;
   font-weight: 600;
@@ -69,6 +75,9 @@ a:hover {
   border-radius: 100px;
   padding-left: 1rem;
 }
+.navbar form {
+  width: 70%;
+}
 .notification, .password {
   background: #ffffff;
   box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
@@ -101,5 +110,30 @@ a:hover {
     -o-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+.show {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+  .main-panel {
+    position: static;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+  }
+  .navbar form {
+    width: 90%;
+  }
+  .close {
+    display: block;
+    cursor: pointer;
   }
 }

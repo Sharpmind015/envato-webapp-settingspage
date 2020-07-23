@@ -7,14 +7,16 @@
   <title>Settings</title>
   <!--Google Fonts-->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-  <!-- CSS only -->
+  <!--Bootstrap CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <!--CUSTOM CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div class="wrapper">
     <aside class="sidebar">
+      <img src="assets/img/Vector.svg" class="close" alt="menu">
       <div class="logo">
         <a href="#" class="navbar-brand text-center d-block">LOGO</a>
       </div>
@@ -40,22 +42,20 @@
       </ul>
     </aside>
     <main class="main-panel">
-      <nav class="navbar navbar-expand-lg navbar-absolute navbar-dark pt-4 px-5">
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-dark pt-4 px-md-4">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="burger-menu">
-              <div class="line-1"></div>
-              <div class="line-2"></div>
-              <div class="line-3"></div>
-            </div>
-            <span class="navbar-toggler-icon icon-bar"></span>
+          <button class="navbar-toggler mx-auto mb-3" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/img/Vector.svg" class="" alt="menu">
+            <!--<span class="navbar-toggler-icon icon-bar"></span>-->
           </button>
-          <form action="" class="w-50">
-            <div class="form-group">
+          <div class="row w-100 mx-auto">
+            
+          <form action="" class="mx-auto my-auto">
+            <div class="form-group my-auto">
               <input type="search" class="form-control" placeholder="Search">
             </div>
           </form>
-          <div class="profile ml-auto">
+          <div class="profile mx-auto mt-3 mt-0-md">
             <img src="assets/img/Ellipse 7.png" alt="">
             <div class="dropdown d-inline-block">
               <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Amelia cooper</a>
@@ -65,38 +65,39 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
       </nav>
 
-      <div class="main-content pl-3 py-5 px-5">
+      <div class="main-content  py-5 px-2 px-md-5">
         <section class="notification ">
           <div class="container-fluid">
             
             <div class="notification-option px-3 py-3">
               <h5 class="mb-4">Notifications</h5>
               <div class="row mt-3">
-                <div class="col-8">
+                <div class="col-sm-8">
                   <p>Include me in publisher's search</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                   <button class="btn btn-notification px-3">Yes</button>
                   <button class="btn btn-notification btn-notification--2 px-3">No</button>
                 </div>
               </div>
               <div class="row mt-3">
-                <div class="col-8">
+                <div class="col-sm-8">
                   <p>Allow advertisers to contact me directly</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                   <button class="btn btn-notification px-3">Yes</button>
                   <button class="btn btn-notification btn-notification--2 px-3">No</button>
                 </div>
               </div>
               <div class="row mt-3">
-                <div class="col-8">
+                <div class="col-sm-8">
                   <p>Send me email updates</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-4">
                   <button class="btn btn-notification px-3">Yes</button>
                   <button class="btn btn-notification btn-notification--2 px-3">No</button>
                 </div>
@@ -125,5 +126,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!--Custom JS-->
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
