@@ -32,6 +32,8 @@ a:hover {
   top: 20px;
   right: 10px;
   display: none;
+  color: #ffffff;
+  font-size: 2rem;
 }
 .navbar-brand {
   font-size: 2rem;
