@@ -1,6 +1,7 @@
 :root {
   --primary-color: #0075FF;
 }
+/*General styling*/
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -10,59 +11,18 @@ a {
 a:hover {
   color: #ffffff;
 }
+/*Buttons*/
+.btn-primary {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+/*Layout*/
 .wrapper {
   position: relative;
   top: 0;
-  height: 100vh;
-  display: flex;
-}
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 286px;
-  background: var(--primary-color);
   height: 100%;
-  color: #ffffff;
-  overflow: auto;
-}
-.close {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  display: none;
-  color: #ffffff;
-  font-size: 2rem;
-}
-.navbar-brand {
-  font-size: 2rem;
-  font-weight: 600;
-}
-.logo {
-  padding: 1rem 0;
-}
-.nav-link {
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 1rem 0;
-  line-height: 2rem;
-  margin-bottom: 0.7rem;
-}
-.active {
-  background: #ffffff;
-  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
-}
-.active .nav-link{
-  color: var(--primary-color);
-}
-.sign-out {
-  /*position: absolute;
-  bottom: 13px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;*/
-  margin-top: 4rem;
 }
 .main-panel {
   position: absolute;
@@ -71,13 +31,10 @@ a:hover {
   height: 100%; 
   top: 0;
 }
-.navbar .form-control {
-  border-radius: 100px;
-  padding-left: 1rem;
+.main-content {
+  background: rgba(0, 117, 255, 0.1);
 }
-.navbar form {
-  width: 70%;
-}
+/*Notification card*/
 .notification, .password {
   background: #ffffff;
   box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
@@ -103,45 +60,13 @@ a:hover {
 .btn-notification--2:hover {
   color: #000000;
 }
+
+/*Media Query*/
 @media screen and (max-width: 991px) {
-  .sidebar {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    right: auto;
-    width: 286px;
-    z-index: 1999;
-    /*overflow-y: visible;*/
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    -webkit-transition: 0.3s ease-in;
-    -moz-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
-    -ms-transition: 0.3s ease-in;
-    transition: 0.3s ease-in;
-  }
-.show {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
   .main-panel {
     position: static;
     width: 100%;
     height: 100%; 
     top: 0;
-  }
-  .navbar form {
-    width: 90%;
-  }
-  .close {
-    display: block;
-    cursor: pointer;
   }
 }

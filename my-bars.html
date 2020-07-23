@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 286px;
+  background: var(--primary-color);
+  height: 100%;
+  color: #ffffff;
+  overflow: auto;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: none;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.logo {
+  padding: 1rem 0;
+}
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  line-height: 2rem;
+  margin-bottom: 0.7rem;
+}
+.active {
+  background: #ffffff;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+}
+.active .nav-link{
+  color: var(--primary-color);
+}
+.sign-out {
+  /*position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;*/
+  margin-top: 4rem;
+}
+.navbar .form-control {
+  border-radius: 100px;
+  padding-left: 1rem;
+}
+.navbar form {
+  width: 70%;
+}@media screen and (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 286px;
+    z-index: 1999;
+    /*overflow-y: visible;*/
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+.show {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+  .main-panel {
+    position: static;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+  }
+  .navbar form {
+    width: 90%;
+  }
+  .close {
+    display: block;
+    cursor: pointer;
+  }
+}
+  </style>
+      <!--Sidebar-->
+    <aside class="sidebar">
+      <i class="fa fa-close close fa-3x"></i>
+      <div class="logo">
+        <a href="#" class="navbar-brand text-center d-block">LOGO</a>
+      </div>
+      <ul class="nav d-block mt-5 text-left">
+        <li class="nav-item pl-5 mb-5">
+          <img src="assets/img/Dashboard Icon.svg" class="d-inline-block mr-2" alt="">
+          <a href="#" class="nav-link d-inline-block">Dashboard</a>
+        </li>
+        <li class="nav-item pl-5 mb-5">
+          <img src="assets/img/list 1.svg" class="d-inline-block mr-2" alt="">
+          <a href="#" class="nav-link d-inline-block">Publisher List</a>
+        </li>
+        <li class="nav-item pl-5 mb-5">
+          <img src="assets/img/wallet 1.svg" class="d-inline-block mr-2" alt="">
+          <a href="#" class="nav-link d-inline-block">Wallet</a>
+        </li>
+        <li class="nav-item active pl-5 mb-5">
+          <img src="assets/img/Vector (1).svg" class="d-inline-block mr-2" alt="">
+          <a href="#" class="nav-link d-inline-block">Account</a>
+        </li>
+        <li class="nav-item pl-5 sign-out">
+          <img src="assets/img/log-out 1.svg" class="d-inline-block mr-2" alt="">
+          <a href="#" class="nav-link d-inline-block">Sign out</a>
+        </li>
+      </ul>
+    </aside>
+
+          <!--main navbar-->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-dark pt-4 px-md-4">
+        <div class="container-fluid">
+          <button class="navbar-toggler mx-auto mb-3" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/img/Vector.svg" class="" alt="menu">
+            <!--<span class="navbar-toggler-icon icon-bar"></span>-->
+          </button>
+          <div class="row w-100 mx-auto">
+          <!--Search form-->
+          <form action="" class="mx-auto my-auto">
+            <div class="form-group my-auto">
+              <input type="search" class="form-control" placeholder="Search">
+            </div>
+          </form>
+          <!--Profile dropdown-->
+          <div class="profile mx-auto mt-3 mt-0-md">
+            <img src="assets/img/Ellipse 7.png" alt="">
+            <div class="dropdown d-inline-block">
+              <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Amelia cooper</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item pl-5" href="#">Profile</a>
+                <a class="dropdown-item pl-5" href="#">Envato</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>
