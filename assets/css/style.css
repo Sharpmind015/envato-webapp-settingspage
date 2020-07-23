@@ -49,12 +49,6 @@ a:hover {
   line-height: 2rem;
   margin-bottom: 0.7rem;
 }
-/*.nav-item:hover {
-  color: var(--primary-color);
-}
-.nav-item:hover .nav-link{
-  color: var(--primary-color);
-}*/
 .active {
   background: #ffffff;
   box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
@@ -63,11 +57,12 @@ a:hover {
   color: var(--primary-color);
 }
 .sign-out {
-  position: absolute;
+  /*position: absolute;
   bottom: 13px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 100%;*/
+  margin-top: 4rem;
 }
 .main-panel {
   position: absolute;
@@ -97,9 +92,15 @@ a:hover {
   border-radius: 5px;
   color: #ffffff;
 }
+.btn-notification:hover {
+  color: #ffffff;
+}
 .btn-notification--2 {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: #ffffff;
+  color: #000000;
+}
+.btn-notification--2:hover {
   color: #000000;
 }
 @media screen and (max-width: 991px) {
