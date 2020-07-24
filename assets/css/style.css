@@ -1,5 +1,6 @@
 :root {
   --primary-color: #0075FF;
+  --notification: #3BC76A;
 }
 /*General styling*/
 body {
@@ -19,20 +20,12 @@ a:hover {
   font-weight: 600;
 }
 /*Layout*/
-.wrapper {
-  position: relative;
-  top: 0;
-  height: 100%;
-}
 .main-panel {
-  position: absolute;
-  left: 286px;
-  width: calc(100% - 286px);
   height: 100%; 
   top: 0;
 }
 .main-content {
-  background: rgba(0, 117, 255, 0.1);
+  /*background: rgba(0, 117, 255, 0.1);*/
 }
 /*Notification card*/
 .notification, .password {
@@ -44,8 +37,8 @@ a:hover {
   font-weight: 600;
 }
 .btn-notification {
-  background: rgba(0, 117, 255, 0.7);
-  border: 1px solid #0075FF;
+  background: var(--notification);
+  border: 1px solid var(--notification);
   border-radius: 5px;
   color: #ffffff;
 }
@@ -57,16 +50,21 @@ a:hover {
   background: #ffffff;
   color: #000000;
 }
+.btn-notification--3 {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #5F5F5F;
+  color: #ffffff;
+}
 .btn-notification--2:hover {
   color: #000000;
 }
 
 /*Media Query*/
-@media screen and (max-width: 991px) {
+/*@media screen and (max-width: 991px) {
   .main-panel {
     position: static;
     width: 100%;
     height: 100%; 
     top: 0;
   }
-}
+}*/
