@@ -58,6 +58,10 @@ a:hover {
 .btn-notification--2:hover {
   color: #000000;
 }
+.arrow {
+  top: 15px;
+  left: 15px;
+}
 /*Toggle button*/
 /* The switch - the box around the slider */
 .switch {
@@ -65,6 +69,10 @@ a:hover {
   display: inline-block;
   width: 60px;
   height: 34px;
+}
+.mobile-upload {
+  background: var(--primary-color);
+  border-radius: 0px 0px 10px 10px;
 }
 
 /* Hide default HTML checkbox */
